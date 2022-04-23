@@ -1,0 +1,52 @@
+.check_status{
+    display: flex;
+    flex-direction: row;
+    width: 162px;
+    margin-left: 0px;
+    white-space: nowrap;
+    h3{
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    // .ball{
+    //     border-radius: 100%;
+    //     width: 30px;
+    //     height: 30px;
+    //     margin-top: 15px;
+    //     display: flex;
+    //     justify-content: center;
+    //     text-align: center;
+    //     align-items: center;
+    //     margin-right: 20px;
+    // }
+    // .ball_1{
+    //     background-color: #FFCC69;
+    // }
+    // .ball_2{
+    //     background-color: #FFCC69;
+    // }
+    // .ball_3{
+    //     background-color: #69D2FF;
+    // }
+    // .ball_4{
+    //     background-color: #69D2FF;
+    // }
+    // .ball_5{
+    //     background-color: #76DD0F;
+    // }
+}
+.processed_check{
+    display: flex;
+    border-bottom: 2px solid #B8D7A9;
+    height: 50px;
+    text-align: left;
+    margin-top: 14px;
+    background-color: var(--color-two);
+    h3{
+        margin-top: 15px;
+    }
+    .check_adres{
+        width: 320px;
+        margin-right: 35px;
+    }
+}

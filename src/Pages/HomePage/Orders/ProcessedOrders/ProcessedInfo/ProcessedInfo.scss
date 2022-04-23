@@ -1,0 +1,202 @@
+.processed_info{
+    background-color: #fff;
+    border-top: #fff;
+    border-left: #fff;
+    border-right: #fff;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid var(--color-green);
+    height: 50px;
+    text-align: left;
+    font-style: normal;
+    .processed_status{
+        width: 115px;
+        height: 30px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 8px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .status_color__accept{
+        background-color: #FFCC69;
+    }
+    .status_color__delivered{
+        background-color: #69D2FF;
+    }
+    .status_color__completed{
+        background-color: #76DD0F;
+    }
+    .check_adres{
+        width: 380px;
+        height: 50px;
+        margin-right: 0px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    // .ball{
+    //     border-radius: 100%;
+    //     width: 30px;
+    //     height: 30px;
+    //     margin-top: 15px;
+    //     display: flex;
+    //     justify-content: center;
+    //     text-align: center;
+    //     align-items: center;
+    // }
+    // .ball_1{
+    //     background-color: #FFCC69;
+    // }
+    // .ball_2{
+    //     background-color: #FFCC69;
+    // }
+    // .ball_3{
+    //     background-color: #69D2FF;
+    // }
+    // .ball_4{
+    //     background-color: #69D2FF;
+    // }
+    // .ball_5{
+    //     background-color: #76DD0F;
+    // }
+}
+.processed_info:nth-child(even){
+    background-color: var(--color-two);
+}
+
+.modal_goods__processed{
+    border-bottom: 1px solid var(--color-green);
+    margin-bottom: 30px;
+    border-top: 1px solid var(--color-green);
+    margin-top: 20px;
+}
+.goods_margin{
+    margin-bottom: 20px;
+}
+.modal_total__processed{
+    font-weight: bold;
+    text-align: right;
+    margin-right: 48px;
+    margin-bottom: 34px;
+}
+.kur{
+    font-weight: 400;
+    .kur_status{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 20px;
+        margin-bottom: 29px;
+        p{
+            margin-top: 15px;
+        }
+    }
+    .kur_accept{
+        width: 115px;
+        height: 30px;
+        background: #FFCC69;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold; 
+        margin-top: 30px;
+    }
+    .kur_name{
+        display: flex;
+        padding-left: 10px;
+        margin-bottom: 29px;
+        h3{
+            margin-right: 49px;
+        }
+    }
+    .kur_number{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 10px;
+        margin-bottom: 29px;
+        h3{
+            margin-right: 29px;
+        }
+    }
+    .kur_adress{
+        display: flex;
+        padding-left: 10px;
+        text-align: left;
+        flex-direction: column;
+        h3{
+            margin-right: 33px;
+        }
+    }
+    label{
+        font-size: 14px;
+        opacity: 50%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
+// .proc_info{
+//     border-top: #fff;
+//     border-left: #fff;
+//     border-right: #fff;
+//     width: 100%;
+//     border-bottom: 1px solid var(--color-green);
+//     background-color: #fff;
+//     text-align: left;
+//     .flex{
+//         border-bottom: #fff;
+//     }
+//     .check_courier{
+//         width:90px;
+//         align-items: center;
+//         h4{
+//             margin-left: 10px;
+//         }
+//     }
+// }
+// .proc_check{
+//     display: flex;
+// }
+// .proc_status{
+//     width: 81px;
+//     height: 40px;
+//     border: 2px solid #FFE713;
+//     margin-right: 35px;
+//     text-align: center;
+//     border-radius: 8px;
+//     p{
+//         font-size: 18px;
+//         margin-top: 8px;
+//     }
+// }
+// .proc_status2{
+//     width: 73px;
+//     height: 40px;
+//     border: 2px solid #FF891C;
+//     margin-right: 43px;
+//     text-align: center;
+//     border-radius: 8px;
+//     p{
+//         font-size: 18px;
+//         margin-top: 8px;
+//     }
+// }
+// .proc_status3{
+//     width:105px;
+//     height: 40px;
+//     border: 2px solid #4FB61E;
+//     margin-right: 12px;
+//     text-align: center;
+//     border-radius: 8px;
+//     p{
+//         font-size: 18px;
+//         margin-top: 8px;
+//     }
+// }

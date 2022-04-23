@@ -1,0 +1,246 @@
+.order_global{
+    .modal_content{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 11px;
+        border: 2px solid #4FB61E;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 8px;
+        width: 585px;
+        height: 85%;
+        font-size: 18px;
+        overflow: auto;
+    }
+}
+.order_info{
+    display: flex;
+    border-bottom: 2px solid #B8D7A9;
+    height: 50px;
+    text-align: left;
+    font-style: normal;
+    .check_adres{
+        width: 370px;
+        height: 50px;
+        margin-right: 115px;
+    }
+}
+h4{
+    margin-top: 15px;
+    font-weight: normal;
+    font-size: 18px;
+}
+.check_№{
+    width: 40px;
+    height: 50px;
+    h4{
+        margin-left: 10px;
+    }
+}
+.check_id{
+    width: 101px;
+    height: 50px;
+
+}
+.check_time{
+    width: 120px;
+    height: 50px;
+}
+.check_number{
+    width: 166px;
+    height: 50px;
+}
+.check_name{
+    width: 200px;
+    height: 50px;
+}
+
+.check_delete{
+    margin-top: 15px;
+
+}
+.modal_text{
+   text-align: left;
+   margin-left: 5px;
+}
+.modal_text__number{
+    display: flex;
+    margin-bottom: 15px;
+    h3{
+        margin-left: 40px;
+        margin-right: 29px;
+        font-weight: 400;
+    }
+}
+.modal_order__flex{
+    display: flex;
+    flex-direction: column;
+    label{
+        font-size: 14px;
+        opacity: 50%;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 12px;
+        margin-bottom: 3px;
+    }
+    .input_height{
+        height: 100px;
+        padding-bottom: 50px;
+    }
+}
+.modal_order__input{
+    width: 540px;
+    height: 50px;
+    border: 2px solid #4FB61E;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left: 10px;
+    color: black;
+    font-size: 18px;
+}
+.modal_adress{
+    display: flex;
+    flex-direction: row;
+    p{
+        margin-left: 40px;
+        margin-top: 14px;
+        margin-right: 23px;
+    }
+    input{
+        border: 2px solid var(--color-green);
+        box-sizing: border-box;
+        border-radius: 8px;
+        width: 572px;
+        height: 50px;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    input::placeholder{
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .pencil{
+        position: relative;
+        right:30px;
+        top:15px;
+        color: var(--color-green);
+    }
+}
+.goods_flex{
+    display: flex;
+    margin-top: 34px;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 13px;
+    
+    .goods_№{
+        width: 40px;
+        font-weight: 500;
+    }
+    .goods_photo{
+        width: 80px;
+        margin-right: 20px;
+        font-weight: 500;
+    }
+    .goods_title{
+        width: 180px;
+        margin-right: 10px;
+        font-weight: 500;
+    }
+    .goods_number{
+        width: 120px;
+        margin-right: 10px;
+        font-weight: 500;
+    }
+    .goods_sum{
+        width: 120px;
+        margin-right: 10px;
+        font-weight: 500;
+    }
+    .goods_total{
+        width: 120px;
+        font-weight: 500;
+    }
+}
+.modal_goods{
+    border-top: 2px solid #B8D7A9;
+    margin-top: 20px;
+}
+.goods_content{
+    display: flex;
+    .img_1{
+        background-image: url(./order1.png);
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        margin-right: 18px;
+    }
+    .img_2{
+        background-image: url(./order2.png);
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        margin-right: 18px;
+    }
+    .img_3{
+        background-image: url(./order3.png);
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        margin-right: 18px;
+    }
+    .content_№{
+        margin-left: 11.5px;
+    }
+    .content_title{
+        width: 140px;
+        text-align: left;
+        margin-right: 10px;
+    }
+    .input_number{
+        width: 100px;
+        height: 60px;
+        margin-right: 20px;
+        border: 2px solid #4FB61E;
+        box-sizing: border-box;
+        border-radius: 8px;
+        margin-right: 35px;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    p{
+        margin-top: 15px;
+    }
+    .goods_delete{
+        margin-top: 12px;
+        margin-left: 40px;
+    }
+
+}
+.modal_total{
+    font-weight: bold;
+    text-align: right;
+    margin-right: 48px;
+    margin-bottom: 54px;
+}
+.modal_button__flex{
+    display: flex;
+    justify-content: space-between;
+    button{
+        width: 260px;
+        height: 50px;
+        border: none;
+        background-color: #fff;
+        color: var(--color-green);
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .button_accept{
+        background-color: var(--color-green);
+        color: #fff;
+        background: #4FB61E;
+        border-radius: 8px;
+    }
+}

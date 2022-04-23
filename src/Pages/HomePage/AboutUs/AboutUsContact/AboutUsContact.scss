@@ -1,0 +1,220 @@
+.contact{
+display: flex;
+flex-wrap: wrap;
+    .pencil_img{
+        background-image: url(./pencil_img.svg);
+        background-repeat: no-repeat;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+    }
+}
+.contact_whatsapp{
+    width: 510px;
+    height: 89px;
+    padding: 11px;
+    border: 2px solid var(--color-green);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 18px;
+    margin:0px 20px 20px 20px;
+    div{
+        display: flex;
+        justify-content: space-between
+    }
+    .whatsapp_img{
+        background-image: url(./whatsapp_img.svg);
+        background-repeat: no-repeat;
+        width: 22px;
+        height: 22px;
+    }
+    h3{
+        margin-right: 305px;
+        font-weight: 600;
+    }
+    input{
+        margin-top: 15px;
+        border: none;
+        font-size: 18px;
+        margin-right: 180px;
+    }
+    input::placeholder{
+        font-weight: normal;
+        opacity: 50%;
+    }
+}
+.contact_telegram{
+    width: 510px;
+    height: 89px;
+    padding: 11px;
+    border: 2px solid var(--color-green);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 18px;
+    
+    div{
+        display: flex;
+        justify-content: space-between
+    }
+    .telegram_img{
+        background-image: url(./telegram_img.svg);
+        background-repeat: no-repeat;
+        width: 22px;
+        height: 22px;
+    }
+    h3{
+        margin-right: 310px;
+        font-weight: 600;
+    }
+    input{
+        margin-top: 15px;
+        border: none;
+        font-size: 18px;
+        margin-right: 180px;
+    }
+    input::placeholder{
+        font-weight: normal;
+        opacity: 50%;
+    }
+}
+.contact_instagram{
+    width: 510px;
+    height: 89px;
+    padding: 11px;
+    border: 2px solid var(--color-green);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 18px;
+    margin:0px 20px 20px 20px;
+    div{
+        display: flex;
+        justify-content: space-between
+    }
+    .instagram_img{
+        background-image: url(./instagram_img.svg);
+        background-repeat: no-repeat;
+        width: 22px;
+        height: 22px;
+    }
+    input{
+        // margin-top: 15px;
+        border: none;
+        font-size: 18px;
+        margin-right: 175px;
+        font-weight: bold;
+    }
+    input::placeholder{
+        font-weight: normal;
+        opacity: 50%;
+    }
+}
+
+.contact_phone{
+    width: 510px;
+    height: 89px;
+    padding: 11px;
+    border: 2px solid var(--color-green);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 18px;
+    
+    div{
+        display: flex;
+        justify-content: space-between
+    }
+    .phone_img{
+        background-image: url(./phone_img.svg);
+        background-repeat: no-repeat;
+        width: 22px;
+        height: 22px;
+    }
+    input{
+        // margin-top: 15px;
+        border: none;
+        font-size: 18px;
+        margin-right: 175px;
+        font-weight: bold;
+    }
+    input::placeholder{
+        font-weight: normal;
+        opacity: 50%;
+    }
+}
+.adress{
+    display: flex;
+    flex-direction: row;
+}
+
+.adress_branch{
+    width: 510px;
+    height: 89px;
+    padding: 11px;
+    border: 2px solid var(--color-green);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: 0px 20px 20px 20px;
+    position: relative;
+    label{
+        flex: 1.3;
+    }
+    input{
+        border: none;
+        font-size: 18px;
+        margin-right: 0px;
+        font-weight: bold;
+        padding-left: 10px;
+        flex: 0.9;
+    }
+    .branch_cont{
+        display: flex;
+        justify-content: space-between
+    }
+    svg{
+        width: 25px;
+        height: 25px;
+        color: var(--color-green);
+        margin-right: 10px;
+    }
+    .three_dot__img{
+        background-image: url(./three_dot__img.svg);
+        background-repeat: no-repeat;
+        width: 5px;
+        height: 21px;
+    }
+    h3{
+        width: 300px;
+        text-align: left;
+        font-weight: 600;
+        margin-right: 90px;
+    }
+    .window{
+        width: 190px;
+        border: 2px solid var(--color-green);
+        box-sizing: border-box;
+        border-radius: 8px;
+        background-color:#ffffff;
+        display: flex;
+        flex-direction: column;
+
+        p{
+            margin-top: 20px;
+            margin-left: 10px;
+            width: 188px;
+            // height: 40px;
+            text-align: left;
+        }
+    }
+    .pencil_img{
+        background-image: url(./pencil_img.svg);
+        background-repeat: no-repeat;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+    }
+}
+.img_adress{
+    width: 508px;
+    height: 307px;
+    background-image: url(./adress.png);
+}

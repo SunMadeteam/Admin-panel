@@ -1,0 +1,36 @@
+.staff{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+.secondActive_btn__link{
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        height: 47px;
+        margin-right: 25px;
+        margin-left: 20px;
+        text-align: center;
+        border-bottom: 3px solid var(--color-green);
+        color: black;
+        p{
+            margin-top: 15px;
+        }
+}
+.second_btn__link{
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    height: 47px;
+    margin-right: 25px;
+    margin-left: 20px;
+    text-align: center;
+    color: black;
+    p{
+        margin-top: 15px;
+    }
+}
+.staff_route{
+    display: flex;
+}

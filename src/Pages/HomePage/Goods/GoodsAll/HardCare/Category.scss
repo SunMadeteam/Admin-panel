@@ -1,0 +1,39 @@
+.category_flex{
+    display: flex;
+    margin-top: 52px;
+    justify-content: space-around;
+    h3{
+       margin-right: 100px;
+    }
+    .category_vector__img{
+        background-image: url(./vector_img.svg);
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 11px;
+        position: relative;
+        top: 5px;
+    }
+    .category_vector__img2{
+        background-image: url(./vector_img2.svg);
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 11px;
+        position: relative;
+        top: 5px;
+    }
+    
+}
+.category_flex1{
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-around;
+    p{
+        width: 170px;
+        text-align: left;
+        margin-right: 25px;
+    }
+    input{
+        width: 24px;
+        height: 24px;
+    }
+}

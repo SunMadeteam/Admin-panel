@@ -1,0 +1,28 @@
+.search_input{
+    width: 831px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 2px solid var(--color-green);
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 0px 0px 0px 0px ;
+    font-size: 18px;
+    padding-left: 50px;
+}
+.search_icons{
+    position: absolute;
+    color: var(--color-green);
+   background-image: url(./search_img.svg);
+   width: 30px;
+   height: 30px;
+   left: 30px;
+   top: 27px;
+   border: none;
+   cursor: pointer;
+}
+.search_input::placeholder{
+    position: relative;
+    font-weight: bold;
+    opacity: 50%;
+    font-size: 18px;
+}

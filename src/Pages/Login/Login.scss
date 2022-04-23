@@ -1,0 +1,162 @@
+.Auth_content{
+    height: 100%;
+    width: 100%;
+}
+.Auth_back{
+    background: url(./back.png) center;
+    height: 960px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Auth_form{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 600px;
+    width: 550px;
+    background: #F8F6F4;
+    border-radius: 14px;
+    margin: 180px 0px 0px 760px;
+    position: relative;
+    .label_margin{
+        margin-top: 63px;
+        margin-right: 230px;
+    }
+    .Auth_failure{
+        color: red;
+        position: absolute;
+        bottom: 188px;
+    }
+    .Auth_input__fail{
+        border:2px solid red;
+    }
+    .Auth_button__grey{
+        background-color: #c4c4c4;
+        transition: 0.5s;
+    }
+    .Auth_close__eye{
+        background-image: url(./close_eye__img.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 17.6px;
+        height:8px;
+        position: absolute;
+        left: 30px;
+        top: 7px;
+    }
+    .Auth_open__eye{
+        background-image: url(./open_eye__img.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 18px;
+        height: 15px;
+        position: absolute;
+        left: 30px;
+        top: 3px;
+    }
+    input::placeholder{
+        opacity: 50%;
+    }
+    .red_close__eye{
+        background-image: url(./red_close__eye.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 17.6px;
+        height: 8px;
+        position: absolute;
+        right: 32px;
+        top: 7px;
+    }
+    .red_open__eye{
+        background-image: url(./red_open__eye.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 18px;
+        height: 15px;
+        position: absolute;
+        right: 32px;
+        top: 2px;
+    }
+}
+.Auth_input{
+    border: 2px solid var(--color-green);
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 50px;
+    width: 300px;
+    margin: 0px 0px 25px 0px;
+    padding: 0.5rem;
+    font-size: 18px;
+}
+.Auth_input_pass{
+    margin-bottom:80px
+}
+.Auth_label{
+    opacity: 50%;
+    margin-right: 220px;
+    margin-bottom: 4px;
+}
+
+.Auth_button{
+    color: #FFFFFF;
+    font-weight: bold;
+    width: 300px;
+    height: 50px;
+    background: var(--color-green);
+    border-radius: 8px;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    border: none;
+    transition: 0.5s;
+} 
+.hello{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    font-style: normal;
+}
+.Auth_eye{
+    position: relative;
+    bottom: 114px;
+    left: 128px;
+    color:var(--color-green);
+    width: 5rem;
+}
+@media(max-width:1320px){
+    .Auth_form{
+        margin: 180px 0px 0px 660px;
+    }
+}
+@media(max-width:1220px){
+    .Auth_form{
+        margin: 180px 0px 0px 560px;
+    }
+}
+@media(max-width:1120px){
+    .Auth_form{
+        margin: 180px 0px 0px 460px;
+    }
+}
+@media(max-width:1020px){
+    .Auth_form{
+        margin: 180px 0px 0px 360px;
+    }
+}
+@media(max-width:920px){
+    .Auth_form{
+        margin: 180px 0px 0px 260px;
+    }
+}
+@media(max-width:820px){
+    .Auth_form{
+        margin: 180px 0px 0px 160px;
+    }
+}
+@media(max-width:720px){
+    .Auth_form{
+        margin: 180px 0px 0px 90px;
+    }
+}

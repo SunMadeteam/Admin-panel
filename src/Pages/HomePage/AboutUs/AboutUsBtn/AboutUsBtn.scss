@@ -1,0 +1,22 @@
+// .btn_link{
+//     font-size: 18px;
+//     font-weight: bold;
+//     border: none;
+//     background: #ffffff;
+//     height: 50px;
+//     margin:0px 10px 0px 10px;
+//     line-height: 21px;
+// }
+.about_us{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-top: 15px;
+    .plus{
+        background-image: url(./plus_icon.svg);
+        width: 20px;
+        height: 20px;
+        margin-right: 30px;
+        margin-top: 15px;
+    }
+}

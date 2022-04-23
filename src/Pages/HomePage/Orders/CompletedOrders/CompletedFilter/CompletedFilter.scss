@@ -1,0 +1,86 @@
+.filter_icon__img{
+    background-image: url(./filter_icon__img.svg);
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 91px;
+    right:22px;
+}
+.completed_filter{
+    width: 280px;
+    height: 230px;
+    border-radius: 8px;
+    border: 2px solid var(--color-green);
+    position: absolute;
+    top: 79px;
+    right: 10px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #fff;
+    
+    svg{
+        width: 24px;
+        height: 24px;
+        color: var(--color-green);
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        height: 21px;
+        
+    }
+    .filter_icon__img2{
+        background-image: url(./filter_icon__img.svg);
+        background-repeat: no-repeat;
+        width: 26px;
+        height: 26px;
+    }
+    input{
+        box-sizing:border-box;
+        border: 2px solid #C4C4C4;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+    }
+    .custom-radio{
+        display: flex;
+        justify-content: space-between;
+    }
+    .custom-radio>input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        
+      }
+      .custom-radio>span {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        position: absolute;
+        right: 0;
+      }
+      .custom-radio>span::before {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #adb5bd;
+        border-radius: 50%;
+        margin-right: 0.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 82% 84%;
+      }
+      .custom-radio>input:not(:disabled):active+span::before {
+        background-color: #b3d7ff;
+        border-color: #b3d7ff;
+      }
+      .custom-radio>input:checked+span::before {
+        border: 2px solid var(--color-green);
+        background-image: url(./for_radio.svg);
+      }
+}
