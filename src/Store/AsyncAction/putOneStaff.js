@@ -10,7 +10,7 @@ export const putOneStaff = (formData) => {
         data: JSON.stringify(formData),
       })
         .then(() => {
-          dispatch({ type: SIGN_IN, payload: formData });
+          dispatch({ type: SIGN_IN});
           navigate("/");
         })
         .catch((err) =>

@@ -13,4 +13,3 @@ export const getProduct = (id) => {
     // console.log(err=>console.log(err.response.data))
   };
 };
-
