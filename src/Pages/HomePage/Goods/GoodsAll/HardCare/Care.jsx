@@ -36,28 +36,32 @@ export const Care = () => {
   };
 
   return (
-    <div className="care_position">
+    <div style={{position:"relative"}}>
       {open === false ? (
         <div className="care_flex">
           <h3>Сложность ухода</h3>
           <div onClick={toggle} className="care_vector__img"></div>
         </div>
       ) : (
-        <div>
+        <div className="custom">
           <div className="care_flex">
             <h3>Сложность ухода</h3>
             <div onClick={toggle} className="care_vector__img2"></div>
           </div>
           <div className="care_flex1">
-            <p>Лёгкий</p>
-            <input
-              value="easy"
-              checked={checkedValueEasy()}
-              // onChange={product.complexity_of_care==="easy"?setChecked(!checked):checked}
-              type="radio"
-            />
+            <label className="custom-radio">
+              <p>Лёгкий</p>
+              <input
+                value="easy"
+                checked={checkedValueEasy()}
+                // onChange={product.complexity_of_care==="easy"?setChecked(!checked):checked}
+                type="radio"
+              />
+              <span></span>
+            </label>
           </div>
           <div className="care_flex1">
+          <label className="custom-radio">
             <p>Средний</p>
             <input
               value="middle"
@@ -65,8 +69,12 @@ export const Care = () => {
               // onChange={product.complexity_of_care==="middle"?setChecked(!checked):checked}
               type="radio"
             />
+            <span></span>
+            </label>
+            
           </div>
           <div className="care_flex1">
+          <label className="custom-radio">
             <p>Сложный</p>
             <input
               value="hard"
@@ -74,6 +82,9 @@ export const Care = () => {
               // onChange={product.complexity_of_care==="hard"?setChecked(!checked):checked}
               type="radio"
             />
+            <span></span>
+            </label>
+            
           </div>
         </div>
       )}

@@ -42,11 +42,11 @@ export const GoodsInfo = () => {
   const onChange = (type, value) => {
     // dispatch(clearErr())
     console.log(type);
+    dispatch(changeGoodsInput(type, value));
     // setForm({
     //   ...form,
     //   [type]: value,
     // });
-    dispatch(changeGoodsInput(value, type));
     // console.log(form)
   };
   const onSubmit = (e) => {

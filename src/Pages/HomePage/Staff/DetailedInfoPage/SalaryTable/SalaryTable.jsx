@@ -23,7 +23,6 @@ export const SalaryTable = () => {
           <p>{element.delivery_count}</p>
         </div>
       )):<p style={{textAlign:"center", marginTop:"20px", fontSize:"40px"}}>loading...</p>}
-      {}
     </div>
   );
 };

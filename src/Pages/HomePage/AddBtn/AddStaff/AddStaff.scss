@@ -1,6 +1,7 @@
 .add_staff{
     display: flex;
     flex-direction: column;
+    position: relative;
     h2{
         margin-top: 10px;
         font-size: 26px;
@@ -128,17 +129,52 @@
 .add_flex1{
     display: flex;
     margin-top: 24px;
+    justify-content: space-between;
     p{
         width: 170px;
         text-align: left;
         margin-right: 81.5px;
         white-space: nowrap;
     }
-    input{
-        width: 24px;
-        height: 24px;
-    }
+ 
 }
-
-
-
+.custom-radio{
+    display: flex;
+    justify-content: space-around;
+}
+.custom-radio>input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .custom-radio>span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    position: absolute;
+    right: 0;
+  }
+  .custom-radio>span::before {
+    content: '';
+    display: inline-block;
+    width: 21.2px;
+    height: 21.2px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 46px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+  }
+  .custom-radio>input:not(:disabled):active+span::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+  .custom-radio>input:checked+span::before {
+    border: 2px solid var(--color-green);
+    width: 20px;
+    height: 20px;
+    background-image: url(./for_radio.svg);
+  }

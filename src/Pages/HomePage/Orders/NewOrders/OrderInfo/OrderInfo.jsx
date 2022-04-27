@@ -16,11 +16,14 @@ export const OrderInfo = () => {
   const order = useSelector((state) => state.Order.order);
   const oneOrder = useSelector((state) => state.Order.getOrder);
   const orderDetail = useSelector((state) => state.Order.orderDetail);
-  console.log(oneOrder);
+  const loading = useSelector(state=>state.Order.loading)
+  console.log(orderDetail);
 
-  // console.log(order);
+  // console.log(oneOrder);
+
   useEffect(() => {
     dispatch(getOrder());
+    
   }, []);
 
   const orderDetailById = (id) => {
@@ -31,7 +34,7 @@ export const OrderInfo = () => {
   const orderDetailnumber = () => {
     if (oneOrder.user === null) {
       return oneOrder.number;
-    } else if (oneOrder.number === null) {
+    } else if (oneOrder.number === "") {
       return oneOrder.user.number;
     } else {
       return "неизвестно";
@@ -41,40 +44,43 @@ export const OrderInfo = () => {
   const orderDetailname = () => {
     if (oneOrder.user === null) {
       return oneOrder.name;
-    } else if (oneOrder.name === null) {
+    } else if (oneOrder.name === "") {
       return oneOrder.user.name;
     } else {
       return "неизвестно";
     }
   };
 
-  const formik = useFormik({
-    initialValues: {
-      // name: () => {
-      //   if (oneOrder.user === null) {
-      //     return oneOrder.name;
-      //   } else if (oneOrder.name === null) {
-      //     return oneOrder.user.name;
-      //   } else {
-      //     return "неизвестно";
-      //   }
-      // },
-      //  name:(oneOrder.user === null?oneOrder.name:oneOrder.user.name),
-      // name:oneOrder.date,
-      number:() => {
-        if (oneOrder.user === null) {
-          return oneOrder.number;
-        } else if (oneOrder.number === null) {
-          return oneOrder.user.number;
-        } else {
-          return "неизвестно";
-        }
-      },
-      adress: oneOrder.adress,
-    },
-  });
-  console.log(formik.values)
-  const onChange = (type, value) => {};
+  const onChange = (type, value) =>{
+    
+  }
+  // const formik = useFormik({
+  //   initialValues: {
+  //     name: () => {
+  //       if (oneOrder.user === null) {
+  //         return oneOrder.name;
+  //       } else if (oneOrder.name === null) {
+  //         return oneOrder.user.name;
+  //       } else {
+  //         return "неизвестно";
+  //       }
+  //     },
+  //     //  name:(oneOrder.user === null?oneOrder.name:oneOrder.user.name),
+  //     // name:oneOrder.user.name,
+      
+  //     number:() => {
+  //       if (oneOrder.user === null) {
+  //         return oneOrder.number;
+  //       } else if (oneOrder.number === null) {
+  //         return oneOrder.user.number;
+  //       } else {
+  //         return "неизвестно";
+  //       }
+  //     },
+  //     adress: oneOrder.adress,
+  //   },
+  // });
+  // console.log(formik.values)
 
   const [modalActive, setModalActive] = useState(false);
   return (
@@ -121,26 +127,33 @@ export const OrderInfo = () => {
         <div className="modal_text">
           <h3>№ 13</h3>
         </div>
-        <div className="modal_order__flex">
+        {loading===true?<div className="modal_order__flex">
           <label>Имя</label>
           <input
+          name="name"
+          type="text"
             className="modal_order__input"
-            // value={formik.values.name()}
-            onChange={(e) => onChange(formik.handleChange)}
-          ></input>
+            value={orderDetailname()}
+            onChange={(e)=>onChange("name", e.target.value)}
+          />
           <label>Номер</label>
           <input
+          name="number"
+          type="text"
             className="modal_order__input"
             value={orderDetailnumber()}
-            onChange={(e) => onChange("number", e.target.value)}
-          ></input>
+            onChange={(e)=>onChange("number", e.target.value)}
+          />
           <label>Адрес</label>
           <input
+          name="adress"
+          type="text"
             className="modal_order__input input_height"
-            value={formik.values.adress}
-            onChange={(e) => onChange("adress", e.target.value)}
+            value={oneOrder.adress}
+            onChange={(e)=>onChange("adress", e.target.value)}
           ></input>
-        </div>
+        </div>:<p>loading...</p>}
+        
         <div className="modal_goods">
           <div className="goods_flex">
             <h3 className="goods_№">№</h3>
@@ -153,7 +166,7 @@ export const OrderInfo = () => {
             <p className="content_№">1</p>
             <div className="img_1"></div>
             <p className="content_title">Монстера</p>
-            <input className="input_number" placeholder="3"></input>
+            <input className="input_number" value="3"></input>
             <p>8400 c</p>
             <div className="goods_delete">
               <Delete />
@@ -163,7 +176,7 @@ export const OrderInfo = () => {
             <p className="content_№">2</p>
             <div className="img_2"></div>
             <p className="content_title">Листова земля</p>
-            <input className="input_number" placeholder="3"></input>
+            <input className="input_number" value="3"></input>
             <p>1200 c</p>
             <div className="goods_delete">
               <Delete />
@@ -173,7 +186,7 @@ export const OrderInfo = () => {
             <p className="content_№">3</p>
             <div className="img_3"></div>
             <p className="content_title">Лейка</p>
-            <input className="input_number" placeholder="3"></input>
+            <input className="input_number" value="3"></input>
             <p>1000 c</p>
             <div className="goods_delete">
               <Delete />

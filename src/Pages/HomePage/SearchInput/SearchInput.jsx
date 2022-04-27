@@ -13,6 +13,7 @@ export const SearchInput = () => {
       dispatch(searchProductByName(values.state))
     }
   });
+  console.log(formik.values)
   return (
     <div>
       <form onSubmit={formik.handleSubmit}>

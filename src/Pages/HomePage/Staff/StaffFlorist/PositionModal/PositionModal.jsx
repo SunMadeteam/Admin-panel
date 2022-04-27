@@ -34,7 +34,7 @@ export const PositionModal = (props) => {
     }
   };
   return (
-    <div className="add_usertype">
+    <div style={{position:"relative"}}>
       {open === false ? (
         <div className="add_flex">
           <h3 className="add_flex__usertype">Должность</h3>
@@ -47,6 +47,7 @@ export const PositionModal = (props) => {
             <div onClick={toggle} className="add_vector__img2"></div>
           </div>
           <div className="add_flex1">
+          <label className="custom-radio">
             <p>Админ</p>
             <input
               type="radio"
@@ -55,8 +56,11 @@ export const PositionModal = (props) => {
               checked={checkedValueAdmin()}
               // onChange={(e) => onChange("usertype", e.target.value)}
             />
+            <span></span>
+            </label>
           </div>
           <div className="add_flex1">
+          <label className="custom-radio">
             <p>Курьер</p>
             <input
               type="radio"
@@ -65,8 +69,11 @@ export const PositionModal = (props) => {
               checked={checkedValueCourier()}
               // onChange={(e) => onChange("usertype", e.target.value)}
             />
+            <span></span>
+            </label>
           </div>
           <div className="add_flex1">
+          <label className="custom-radio">
             <p>Флорист</p>
             <input
               type="radio"
@@ -75,6 +82,8 @@ export const PositionModal = (props) => {
               checked={checkedValueFlorist()}
               // onChange={(e) => onChange("usertype", e.target.value)}
             />
+            <span></span>
+            </label>
           </div>
         </div>
       )}

@@ -22,17 +22,60 @@
         top: 5px;
     }
 }
+.custom{
+  .custom-radio{
+    display: flex;
+    justify-content: space-around;
+}
+.custom-radio>input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .custom-radio>span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    position: absolute;
+    right: 0;
+  }
+  .custom-radio>span::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 39px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80% 80%;
+  }
+  .custom-radio>input:not(:disabled):active+span::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+  .custom-radio>input:checked+span::before {
+    border: 2px solid var(--color-green);
+    width: 20px;
+    height: 20px;
+    background-image: url(./for_radio.svg);
+  }
+
 .care_flex1{
     display: flex;
     margin-top: 24px;
-    justify-content: space-around;
+    justify-content: space-between;
     p{
         width: 170px;
         text-align: left;
-        margin-right: 25px;
+        margin-left: 42px;
     }
     input{
         width: 24px;
         height: 24px;
     }
+}
 }

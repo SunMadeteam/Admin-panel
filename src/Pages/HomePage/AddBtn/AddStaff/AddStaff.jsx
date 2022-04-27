@@ -99,6 +99,7 @@ export const AddStaff = () => {
                 <div onClick={toggle} className="add_vector__img2"></div>
               </div>
               <div className="add_flex1">
+                <label className="custom-radio">
                 <p>Админ</p>
                 <input
                   type="radio"
@@ -106,8 +107,11 @@ export const AddStaff = () => {
                   value="admin"
                   onChange={(e) => onChange("usertype", e.target.value)}
                 />
+                <span></span>
+                </label>
               </div>
               <div className="add_flex1">
+              <label className="custom-radio">
                 <p>Курьер</p>
                 <input
                   type="radio"
@@ -115,8 +119,11 @@ export const AddStaff = () => {
                   value="runner"
                   onChange={(e) => onChange("usertype", e.target.value)}
                 />
+                <span></span>
+                </label>
               </div>
               <div className="add_flex1">
+              <label className="custom-radio">
                 <p>Флорист</p>
                 <input
                   type="radio"
@@ -124,6 +131,8 @@ export const AddStaff = () => {
                   value="florist"
                   onChange={(e) => onChange("usertype", e.target.value)}
                 />
+                <span></span>
+                </label>
               </div>
             </div>
           )}
@@ -142,6 +151,7 @@ export const AddStaff = () => {
                 <div onClick={roggle} className="add_vector__img2"></div>
               </div>
               <div className="add_flex1">
+                <label className="custom-radio">
                 <p>Бишкек, Байтик Батыра 49</p>
                 <input
                   type="radio"
@@ -149,8 +159,11 @@ export const AddStaff = () => {
                   value="1"
                   onChange={(e) => onChange("branch", Number(e.target.value))}
                 />
+                <span></span>
+                </label>
               </div>
               <div className="add_flex1">
+              <label className="custom-radio">
                 <p>Бишкек, Манаса 47</p>
                 <input
                   type="radio"
@@ -158,8 +171,11 @@ export const AddStaff = () => {
                   value="2"
                   onChange={(e) => onChange("branch", Number(e.target.value))}
                 />
+                <span></span>
+                </label>
               </div>
               <div className="add_flex1">
+              <label className="custom-radio">
                 <p>Бишкек, проспект Чуй 147/1</p>
                 <input
                   type="radio"
@@ -167,6 +183,8 @@ export const AddStaff = () => {
                   value="3"
                   onChange={(e) => onChange("branch", Number(e.target.value))}
                 />
+                <span></span>
+                </label>
               </div>
             </div>
           )}

@@ -14,6 +14,7 @@ const ProcessedInfo = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getOrderProcessed());
+    // loading=true
   }, []);
   const orderDetailById = (id) => {
     // value()
@@ -23,7 +24,8 @@ const ProcessedInfo = () => {
   const order = useSelector((state) => state.Order.order);
   const oneOrder = useSelector((state) => state.Order.getOrder);
   const orderDetail = useSelector((state) => state.Order.orderDetail);
-  console.log(oneOrder);
+  const loading = useSelector(state=>state.Order.loading)
+  console.log(loading);
   // console.log(order);
 
   const orderDetailname = () => {
@@ -51,7 +53,7 @@ const ProcessedInfo = () => {
   };
   return (
     <div>
-      {order.results.map((element, index) => (
+      {loading===true?order.results.map((element, index) => (
         <div
           className="processed_info"
           onClick={() => setModalActive(true, orderDetailById(element.id))}
@@ -78,7 +80,7 @@ const ProcessedInfo = () => {
             доставил
           </div>
         </div>
-      ))}
+      )):<p>loading...</p>}
       <Pagination
         next={order.next}
         previous={order.previous}

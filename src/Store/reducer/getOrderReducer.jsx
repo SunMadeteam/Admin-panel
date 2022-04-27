@@ -16,7 +16,7 @@ const initialState = {
 export const getOrderReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_ORDER:
-      return { ...state, order: action.payload };
+      return { ...state, order: action.payload, loading:true};
     case PAGINATION_ORDER:
       return { ...state, order: action.payload };
     case DELETE_ORDER:
@@ -29,7 +29,7 @@ export const getOrderReducer = (state = initialState, action) => {
         },
       };
       case GET_ORDER_BY_ID:
-        return { ...state, getOrder: action.payload };
+        return { ...state, getOrder: action.payload, loading:true };
       case GET_ORDER_DETAIL:
         return { ...state, orderDetail: action.payload };
     default:

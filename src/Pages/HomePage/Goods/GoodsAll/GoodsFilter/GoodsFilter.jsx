@@ -34,7 +34,6 @@ export const GoodsFilter = () => {
             <div key={element.id} className="goods_filter__element">
               <label className="custom-radio " >
                 <p>{element.name}</p>
-               
                 <input
                   type="radio"
                   name="category"

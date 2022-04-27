@@ -26,13 +26,13 @@ const AddBtn = (props) => {
           <button className="add_revers" onClick={toggle}>
             <p>Добавить</p>
           </button>
-          <button onClick={() => setModalActiveProduct(true)}>
+          <button onClick={() => setModalActiveProduct(true, setModalActiveStaff(false),setModalActiveCategory(false))}>
             <p>Товары</p>
           </button>
-          <button onClick={() => setModalActiveCategory(true)}>
+          <button onClick={() => setModalActiveCategory(true,setModalActiveProduct(false),setModalActiveStaff(false) )}>
             <p>Категории</p>
           </button>
-          <button onClick={() => setModalActiveStaff(true)}>
+          <button onClick={() => setModalActiveStaff(true, setModalActiveProduct(false),setModalActiveCategory(false))}>
             <p>Сотрудники</p>
           </button>
         </div>

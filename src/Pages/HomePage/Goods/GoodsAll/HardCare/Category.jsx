@@ -11,7 +11,7 @@ export const Category = () => {
   const category = useSelector((state) => state.Goods.category);
   // console.log(category);
   return (
-    <div className="category_position">
+    <div style={{position:"relative"}}>
       {open === false ? (
         <div className="category_flex">
           <h3>Категории</h3>
@@ -25,11 +25,14 @@ export const Category = () => {
           </div>
           {category.results.map((element, index) => (
             <div className="category_flex1" key={index}>
+              <label className="custom-radio">
               <p>{element.name}</p>
               <input
                 checked={element.id === product.category.id ? true : false}
                 type="radio"
               />
+              <span></span>
+              </label>
             </div>
           ))}
         </div>

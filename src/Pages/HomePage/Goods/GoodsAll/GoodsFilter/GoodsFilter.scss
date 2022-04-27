@@ -11,6 +11,7 @@
     width: 280px;
     border: 2px solid var(--color-green);
     position: absolute;
+    border-radius: 8px;
     top: 100px;
     right: 16px;
     font-size: 18px;
@@ -30,7 +31,9 @@
     }
 
 }
-.custom-radio{
+
+.goods_filter__element{
+  .custom-radio{
     display: flex;
     justify-content: space-between;
 }
@@ -50,16 +53,16 @@
   .custom-radio>span::before {
     content: '';
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     flex-shrink: 0;
     flex-grow: 0;
     border: 1px solid #adb5bd;
     border-radius: 50%;
-    margin-right: 0.5em;
+    margin-right: 11px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 82% 84%;
+    background-size: 80% 80%;
   }
   .custom-radio>input:not(:disabled):active+span::before {
     background-color: #b3d7ff;
@@ -67,5 +70,9 @@
   }
   .custom-radio>input:checked+span::before {
     border: 2px solid var(--color-green);
+    width: 20px;
+    height: 20px;
     background-image: url(./for_radio.svg);
   }
+}
+
