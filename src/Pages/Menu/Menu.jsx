@@ -13,8 +13,8 @@ export const Menu = () => {
 
   return (
     <div className='menu_wrapper'>
-        <p className='logo'>SunMade</p>
         <div className='menu_flex'>
+        <p className='logo'>SunMade</p>
             <NavLink to="/HomePage/OrdersRoute/NewOrders" className={linkActiveClassName('OrdersRoute')}><p>Заказы</p></NavLink>
             <NavLink to="/HomePage/GoodsRoute/GoodsAll" className={linkActiveClassName('GoodsRoute')}><p>Товары</p></NavLink>
             <NavLink to="/HomePage/StatisticsRoute" className={linkActiveClassName('StatisticsRoute')}><p>Статистика</p></NavLink>
